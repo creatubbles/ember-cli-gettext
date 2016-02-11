@@ -16,6 +16,10 @@ export function initialize(container, application) {
   }
 
   application.register('service:gettext', gettext, { instantiate: false });
+
+  window._t = gettext._t;
+  window._ = gettext._t;
+  window._n = gettext._n;
 }
 
 export default {
