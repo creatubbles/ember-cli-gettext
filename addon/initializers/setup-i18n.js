@@ -20,6 +20,7 @@ export function initialize(container, application) {
   window._t = gettext._t;
   window._ = gettext._t;
   window._n = gettext._n;
+  window._s = gettext._s;
 }
 
 export default {
